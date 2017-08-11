@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" class="uib-framework-theme">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+            
+        progress[value] 
+        {
+          /* Reset the default appearance */
+          -webkit-appearance: none;
+           appearance: none;
+
+           width: 237px;
+           height: 20px;
+         }
+         
+        progress[value]::-webkit-progress-bar {
+          background-color: #eee;
+          border-radius: 2px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+        }
+            
+        progress[value]::-webkit-progress-value {
+        
+            background-color: #5cb85c;    
+            border-radius: 2px; 
+            background-size: 35px 20px, 100% 100%, 100% 100%;
+        }
+            
+        input[id="txt_login"]::-webkit-inner-spin-button, 
+        input[id="txt_login"]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+         margin: 0; 
+         }
+            
+                input[id="txt_num_mesa"]::-webkit-inner-spin-button, 
+        input[id="txt_num_mesa"]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+         margin: 0; 
+         }
+              
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="../www/css/selectivity-jquery.min.css"lass="main-less">
+
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+
+        <script src="js/app.js"></script>
+        <script type="application/javascript" src="js/dati.js"></script>
+
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--<script type="application/javascript" src="lib/jquery.min.js"></script>-->
+        
+        <script type="application/javascript" src="lib/jquery-3.2.1.min.js"></script>
+        <script type="application/javascript" src="../www/lib/selectivity-jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    </head>
+
+    <body>
+        <!--page dos garçons nova independente  panel-heading-->
+        <div class="upage zzz background_mesas" id="mainpage">
+            <div class="upage-outer">
+                <div class="uib-header container-group inner-element uib_w_90 back_login" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="widget uib_w_91 tam_saga" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/saga_creme.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_92 d-margins sem_border btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_config">
+                            <img src="images/pictogramas/opcoes_claro.png" height="18px" width="18px">
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 margin_congif sem_border btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_sair_g">
+                            <img src="images/pictogramas/fechar_claro.png" height="18px" width="18px">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left" id="page_89_56" style="position: relative;">
+                    <div class="grid urow uib_row_34 row-height-34 back_garcom" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_78 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="widget uib_w_93 scale-image" data-uib="media/img" data-ver="0">
+                                    <figure class="figure-align">
+                                        <img src="images/login_garcon.png">
+
+                                        <figcaption data-position="bottom"></figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="grid urow uib_row_39 row-height-39 pad_login" data-uib="layout/row" data-ver="0" style="position: absolute; top: 175px;">
+                                    <div class="col uib_col_83 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="table-thing widget uib_w_94 margin_butt_g" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                <label class="narrow-control" for="txt_login"></label>
+                                                <input class="wide-control form-control default" type="text" placeholder="Código" id="txt_login">
+                                            </div>
+
+                                            <div class="table-thing widget uib_w_95 margin_butt_g" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                <label class="narrow-control" for="txt_senha"></label>
+                                                <input class="wide-control form-control default" type="password" placeholder="Senha" id="txt_senha">
+                                            </div>
+                                            <button class="btn widget uib_w_96 btn-success fonte_nomal" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_entrar" disabled="disabled"><i class="glyphicon glyphicon-ok button-icon-left" data-position="left"></i> Entrar</button>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                </div>
+
+                <div class="inner-element uib_w_51 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':300, 'side':'left', 'oh':6, 'dur':200}">
+                    <div class="sidebar-thumb"></div>
+
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <div class="grid urow uib_row_41 pad_fechar_conf" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_85 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <button class="widget uib_w_53 fechar_conf btn-sm" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_fechar_conf">
+                                        <img src="images/pictogramas/fechar_claro.png" height="18px" width="18px">
+                                    </button><span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                        <div class="grid grid-pad urow uib_row_40" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_84 col-0_12-12 background_conf2" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <span class="widget uib_w_98 sem_border fonte_config label label-default marg_fech_conf w2" data-uib="twitter%20bootstrap/badge_and_label" data-ver="1">Configuração do Serviço</span>
+                                    <button class="btn widget uib_w_57 d-margins fonte_nomal tam_btn_atua btn-success marg_fech_conf" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_recarregar" disabled="disabled"><i class="glyphicon glyphicon-repeat button-icon-left" data-position="left"></i>Atualizar</button>
+                                    <div class="table-thing widget uib_w_55 d-margins tamanho_config marg_fech_conf fonte_label" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                        <label class="narrow-control label-top-left" for="txt_main_service">Serviço Principal:</label>
+                                        <input class="wide-control form-control default" type="url" placeholder="localhost" id="txt_main_service" disabled="disabled">
+                                    </div>
+                                    <div class="table-thing widget uib_w_70 margin_butt_g tamanho_config marg_fech_conf fonte_label" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                        <label class="narrow-control label-top-left" for="txt_senha_admin">Senha Administrador:</label>
+                                        <input class="wide-control form-control default" type="password" id="txt_senha_admin">
+                                    </div>
+                                    <progress value="30" max="100" style="visibility:hidden;" id="bar_atualizar"></progress>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- panel lateral esquerdo -->
+
+        </div>
+
+        <!--page das mesas nova independente-->
+        <div class="upage hidden background_mesas fonte_branca" id="page_mesas">
+            <div class="upage-outer">
+
+                <div class="uib-header header-bg container-group inner-element uib_w_1 uib-header-fixed borda_cabec" data-uib="layout/header" data-ver="0" id="nome_empresa">
+
+                    <div class="widget-container wrapping-col single-centered">
+                        <center id="n_empresa" class="fonte_branca">Mesas</center>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_52 margin_congif btn-sm btn-default hide" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_config2"><i class="glyphicon glyphicon-cog" data-position="icon only"></i>
+                        </button>
+                        <div class="table-thing widget uib_w_68 d-margins ww" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control" for="txt_num_mesa"></label>
+                            <input class="wide-control form-control default input-sm" type="number" id="txt_num_mesa" min="1" max="500">
+                        </div>
+                        <button class="btn widget uib_w_69 btn-sm btn-success margin_ir" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_ir" disabled="disabled">Ir</button>
+                        <button class="btn widget uib_w_89 d-margins sem_border btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_info">
+
+                            <img src="images/pictogramas/info.png" height="18px" width="18px">
+
+                        </button>
+                    </div>
+
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <!-- <img src="images/pictogramas/fechar_escuro.png" height="18px" width="18px"> -->
+
+                    </div>
+                </div>
+
+                <!--sub page antiga dos garçons-->
+                <!--agora vai ser das mesas  xx  grid-pad   -->
+                <div class="upage-content ac0 content-area vertical-col left" id="page_9_93">
+
+                    <div id="margem_mesas" class="grid  urow uib_row_28 row-height-28 grid-pad-mes" data-uib="layout/row" data-ver="0">
+
+                        <div class="col uib_col_68 col-0" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area wrapping-col left" id="bmesas">
+                                <button class="btn widget uib_w_13 margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_1">1</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_2">2</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button  ff" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_3">3</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_4">4</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_5">5</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_6">6</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_7">7</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_8">8</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_9">9</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_10">10</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_11">11</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_12">12</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_13">13</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_14">14</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_15">15</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_16">16</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_17">17</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_18">18</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_19">19</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_20">20</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_21">21</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_22">22</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_23">23</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_24">24</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_25">25</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_26">26</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_27">27</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_28">28</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_29">29</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_30">30</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_31">31</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_32">32</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_33">33</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_34">34</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_35">35</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_36">36</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_37">37</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_38">38</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_39">39</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_40">40</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_41">41</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_42">42</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_43">43</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_44">44</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_45">45</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_46">46</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_47">47</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_48">48</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_49">49</button>
+                                <button class="btn widget uib_w_13 hh margin_button round_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_50">50</button>
+                                
+                          <!--<button type="button" class="btn btn-default btn-lg" id="btn_extra_opcoes">EXTRA OPCOES</button>-->
+
+                            </div>
+                        </div>
+
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_27 row-height-27" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_65 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                </div>
+
+                <!-- footer das tres paginas -->
+                <div class="uib-footer uib-footer-fixed container-group inner-element uib_w_2 header-bg" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_4 btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_garcons">
+                                <img src="images/pictogramas/garcon_on.png" height="22px" width="22px">
+                            </button>
+                            <button class="btn widget uib_w_5 btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_mesas">
+                                <img src="images/pictogramas/mesa_on.png" height="22px" width="22px">
+                            </button>
+                            <button class="btn widget uib_w_6 btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_pedido">
+                                <img src="images/pictogramas/cardapio_on.png" height="22px" width="22px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_83 uib_sidebar leftbar thumb-bg bar-gutter back_bar border_right" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':130, 'side':'left', 'dur':200}" id="bar_legenda">
+                    <div class="sidebar-content content-area vertical-col">
+                        <div class="grid urow uib_row_33 row-height-33" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_77 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <div class="widget-container content-area vertical-col"><span class="widget uib_w_97 fonte_branca sem_border margin_lenda label label-default" data-uib="twitter%20bootstrap/badge_and_label" data-ver="1">Status</span>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+
+                        <div class="widget uib_w_84 d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/disponivel.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                        <div class="widget uib_w_85 d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/ocupado.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                        <div class="widget uib_w_86 d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/fechamento.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                        <div class="widget uib_w_87 d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/reservado.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                        <div class="widget uib_w_88 d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/indisponivel.png">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- listar item selecionados -->
+            
+            <div class="modal outer-element uib_w_112" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="true" id="popup_prod">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header1">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h3 id="pop_mesa" class="modal-title" style="color:rgb(135,135,135);">N° 123 </h3>
+                            <table style="width:100%;" height="10px">
+                                <tbody>
+                                    <tr style="background-color: #FFFFFF;">
+                                        <th style="font-size: 16px" width="70%">Produto</th>
+                                        <th style="font-size: 16px;text-align: center;" width="15%">Qtd</th>
+                                        <th style="text-align: right;font-size: 16px" width="15%">Valor</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="modal-body1" style="background-color: rgb(252,242,219);" id="table_produtos">
+                            
+                            <table style="width:100%;" id="t_produts">
+                                <tbody>
+                                    <tr class="tr_class_i" >
+                                        <td style="text-align: left;" width="70%">Batata Frita</td>
+                                        <td style="text-align: center;" width="15%">1</td>
+                                        <td style="text-align: right;" width="15%">11,00</td>
+                                        
+                                    </tr>
+                                    <tr class="tr_class_p" >
+                                        <td style="text-align: left;" width="70%">Antártica Original 600ml</td>
+                                        <td style="text-align: center;" width="15%">15</td>
+                                        <td style="text-align: right;" width="15%">134,00</td>
+                                    </tr>
+                                    <tr class="tr_class_i" >
+                                        <td style="text-align: left;" width="70%">Porção de Torresminho 400g</td>
+                                        <td style="text-align: center;" width="15%">1</td>
+                                        <td style="text-align: right;" width="15%">7,50</td>
+                                    </tr>
+                                    <tr class="tr_class_p" >
+                                        <td style="text-align: left;" width="70%">Suco de Maracujá Jarra 1L</td>
+                                        <td style="text-align: center;" width="15%">12</td>
+                                        <td style="text-align: right;" width="15%">177,50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer">
+                            <table style="width:100%;" height="10px">
+                                <tbody>
+                                    <tr style="background-color: #FFFFFF;">
+                                        <th class="th_class" style="font-size: 16px" width="50%">TOTAL</th>
+
+                                        <th class="th_class" id="total_ped" style="text-align: right;font-size: 16px" width="50%">R$ 000,00</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <!-- botonsitos para modificar productos -->
+                    <div class="btn-group-lg" role="group" aria-label="Funcoes Extra">
+                        
+                        <button type="button" class="btn btn-default">
+                            <!-- <a data-target="#myModal_cancelar" class="list-group-item-action" data-toggle="modal">-->
+                             <a id="btn_myModal_FecharMesa" class="list-group-item-action" data-toggle="modal">
+                                 <span class="glyphicon glyphicon-folder-close"></span> <b>Fechar Mesa</b></a>
+                        </button>
+`    
+                        
+                      <button type="button" class="btn btn-default">
+                            <!-- <a data-target="#myModal_cancelar" class="list-group-item-action" data-toggle="modal">-->
+                             <a id="btn_myModal_cancelar" class="list-group-item-action" data-toggle="modal">
+                                 <span class="glyphicon glyphicon-eye-close"></span> <b>Cancelar a Mesa</b></a>
+                        </button>
+`                           <br />
+                      <button type="button" class="btn btn-default">
+                         <!--<a data-target="#myModal_editar_item" class="list-group-item-action" data-toggle="modal"> -->
+                    <a id="myModal_editar_item" class="list-group-item-action" data-toggle="modal" data-direction='bottom'>
+                         <span class="glyphicon glyphicon-remove-sign"></span> <b>Cancelar Iten/s </b> </a>
+                      </button>
+                      <button type="button" class="btn btn-default">
+                          <a id="myModal_Mudar_Mesa" class="list-group-item-action" data-toggle="modal">
+                              <span class="	glyphicon glyphicon-random"></span> <b>Transferir Mesa</b> </a>
+
+                      </button>
+                    </div>
+                            
+                        <!--fim botonsitos--->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!--modals-->
+            
+            <!--Modal Cancelar-->
+          <!-- Trigger the modal with a button -->
+          <!--<button type="button" class="btn btn-default btn-lg" id="myBtn">EXTRA OPCOES</button>-->
+
+          <!-- Modals -->
+
+            <!--Begin modal Editar Item --->
+  <div class="modal outer-element uib_w_112" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="true" id="myModal_editar_item">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <button class="close" data-dismiss="modal">x</button>
+                            <h3 id="pop_mesa1" class="modal-title" style="color:rgb(135,135,135);">Mesa N° 123 </h3>
+                            <table style="width:100%;" height="10px">
+                                <tbody>
+                                    <tr style="background-color: #FFFFFF;">
+                                        <th style="font-size: 16px" width="70%" align="left">Produto</th>
+                                        <th style="font-size: 16px;text-align: center;" width="15%">Qtd</th>
+                                    </tr>
+                              </tbody>
+                          </table>
+                        </div>
+
+                        <div class="modal-body1" style="background-color: rgb(252,242,219);" id="table_produtos">
+                            
+                            <table style="width:100%;" id="t_produts_trocar" class="w3-table-all w3-hoverable">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                                <button type="button" class="btn btn-default btn-sm" id="btn_trocar_item">  
+          										<span class="glyphicon glyphicon-edit"></span> Trocar
+       											 </button>
+                                        		
+                                        		<button type="button" class="btn btn-default btn-sm" id="btn_remover_item">
+          										<span class="glyphicon glyphicon-remove"></span> 
+          										Remover 
+        										</button>
+                                       		
+                                        		Batata Frita
+                                        </td>
+                                        <td style="text-align: center;" width="15%">
+                                        1</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;" width="70%">
+                                                <button type="button" class="btn btn-default btn-sm" id="btn_trocar_item">  
+          										<span class="glyphicon glyphicon-edit"></span> Trocar
+       											 </button>
+                                        		
+                                        		<button type="button" class="btn btn-default btn-sm" id="btn_remover_item">
+          										<span class="glyphicon glyphicon-remove"></span> 
+          										Remover 
+        										</button>
+                                            Antártica Original 600ml</td>
+                                        <td style="text-align: center;" width="15%">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;" width="70%">
+                                                <button type="button" class="btn btn-default btn-sm" id="btn_trocar_item">  
+          										<span class="glyphicon glyphicon-edit"></span> Trocar
+       											 </button>
+                                        		
+                                        		<button type="button" class="btn btn-default btn-sm" id="btn_remover_item">
+          										<span class="glyphicon glyphicon-remove"></span> 
+          										Remover 
+        										</button>                                            
+                                            
+                                            Porção de Torresminho 400g</td>
+                                        <td style="text-align: center;" width="15%">1</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer">
+                           
+                            <!-- botonsitos para Editar Item -->
+                                <nav class="navbar navbar-default">
+                                  <div class="container-fluid">
+                                        <ul class="list-group-horizontal">
+                                            
+                                            <li class="list-group-item">
+                                              <a data-target="#myModal_cancelar" class="list-group-item-action" data-toggle="modal"> <span class="glyphicon glyphicon-modal-window"></span> Editar </a>
+                                          </li>
+                                            
+                                          <li class="list-group-item">
+                                              <a class="list-group-item-action" data-toggle="modal" data-dismiss="modal">
+                                               <span class="glyphicon glyphicon-modal-window"></span> Cancelar </a>
+                                          </li>
+                                          
+                                        </ul>
+                                  </div>
+                                </nav>
+                                                        
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <!--End modal Editar Item--->
+            
+            <!--begin modal cancelar-->
+            
+   <div class="modal fade" id="myModal_cancelar" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content (Cancelar Mesa)-->
+      <div class="modal-content">
+        <div class="modal-header modal-title" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 id="pop_mesa3" class="modal-title" style="color:rgb(135,135,135);">Mesa CANCELAR MESA # (CONFIRMAR) </h3>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+                <!--<label for="name"><span class="label label-danger" ></span> <font color="#333333">
+                    <label >Inserir a razão </label></font></label>-->
+                <label class="label label-danger"> Descrevem-se aqui a razão</label>
+               <textarea rows="4" cols="24" placeholder="..." id="textRazaoCancelacao"></textarea>
+            </div>
+ 
+              <button type="button" class="btn btn-success btn-block btn-lg" id="btn_confirmar_cancelar_mesa"><span class="glyphicon glyphicon-ok-sign"></span> Confirmar Cancelamento</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-block btn-default  btn-lg" data-dismiss="modal"><span class="glyphicon glyphicon-eye-close"></span> Fechar </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+            <!--end modal cancelar--------------------->
+            
+            
+            <div class="container">
+          <!-- Trigger the modal with a button -->
+          <!--<button type="button" class="btn btn-default btn-lg" id="myBtn">EXTRA OPCOES</button>-->
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal_MODELO" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4><span class="glyphicon glyphicon-lock"></span> EXTRA OPCOES </h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                  <form role="form">
+
+                    <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Editar </label>
+                      <input type="text" class="btn btn-warning" id="btn_editar" placeholder="Editar/Modificar">
+                    </div>
+
+                      <div class="form-group">
+                      <label for="Cancelar Mesa"><span class="glyphicon glyphicon-remove"></span> Cancelar Mesa </label>
+                      <input type="button" class="btn btn-danger" id="btn_cancelar" placeholder="Cancelar">
+                    </div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="text" class="btn btn-danger btn-default pull-left " data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Fechar </button>
+                </div>
+              </div>
+
+            </div>
+          </div> 
+        </div>
+            
+            <!--  ***************    modal mudar trocar mesa ******************* -->
+            
+        
+            
+<div class="modal fade" id="myModal_TrocarMesa" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content (Cancelar Mesa)-->
+      <div class="modal-content">
+        <div class="modal-header modal-title" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 id="pop_mesa4" class="modal-title" style="color:rgb(135,135,135);">Mesa CANCELAR MESA # (CONFIRMAR) </h3>
+        </div>
+        <div class="modal-body" style="padding:20px 20px;">
+          <form>
+              <div class="container">    
+                  <div class="row" id="lista_itens_transf">
+                      
+                    <div class="col-sm-4" id="item01">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">item1</div>
+                        <div class="panel-body">
+                            <div class="panel-body" id="table_produtos">
+                            <table style="width:100%;" id="t_produts">
+                                <tbody>
+                                    <tr class="tr_class_i" >
+                                        <td style="text-align: left;" width="70%">Batata Frita</td>
+                                        <td style="text-align: center;" width="15%">1</td>
+                                        <td style="text-align: right;" width="15%">11,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        <!--<div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+                      </div>
+                    </div>
+                      
+                  </div>
+                </div>
+              <br>
+              <!--<p id="lista_itens_naMesa">itens</p>-->
+              <div data-role="rangeslider" data-track-theme="b" data-theme="a">
+                <button type="button" class="btn btn-success btn-block btn-lg" id="btn_transferir_a_mesa" onclick="transferirAMesa()">
+                    <span class="glyphicon glyphicon-move"></span> Transferir a Mesa </button>
+                   </div>
+                </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-block btn-default  btn-lg" data-dismiss="modal"><span class="glyphicon glyphicon-eye-close"></span> Fechar </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>            
+</div>
+        
+        <!------------------ modal escolher a mesa destino ------------------------->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal_escolherMesaDestino" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+                <div id="mesas_livres">
+                    <button class='btn widget uib_w_13 margin_button round_button m_disponivel fonte_nomal' data-uib='twitter%20bootstrap/button' data-ver='1' id='btn_mesasLivres'></button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-block btn-default  btn-lg footer navbar-fixed-bottom" data-dismiss="modal" onclick="fecharModalMesasLivres()"><span class="glyphicon glyphicon-eye-close"></span> Fechar (1) </button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!------------------ end modal escolher a mesa destino ------------------------->
+
+        <!--page dos grupos nova independente  uib_row_24-->
+        <!--Cardapio-->
+        <div class="upage hidden background_mesas" id="page_grupos_g">
+            <div class="upage-outer" id="page_grupos_g1">
+                <div class="uib-header header-bg container-group inner-element uib_w_66 uib-header-fixed borda_cabec" data-uib="layout/header" data-ver="0">
+
+                    <p class="h222" id="name_ggg">Cardápio</p>
+                    <!--<center id="g_empresa" class="fonte_branca">Cardápio</center>
+                    pad_grupo
+                    -->
+                    <div class="widget-container wrapping-col single-centered">
+
+                        <div class="grid urow uib_row_23 pad_test" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_30 col-0_4-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+                                    <div class="tarea widget uib_w_17 fonte_label_grupo back_butt_label new_margin_l" data-uib="media/text" data-ver="0" name="uib_w_17" id="label_mes_card">
+                                        <div class="widget-container left-receptacle"></div>
+                                        <div class="widget-container right-receptacle"></div>
+                                        <div class="text-container">
+                                            <p id="label_m_cg">M:</p>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <div class="col uib_col_31 col-0_8-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+                                    <div class="tarea widget uib_w_18 fonte_label_grupo new_margin_l back_butt_label" data-uib="media/text" data-ver="0" name="uib_w_18" id="label_gar_card">
+                                        <div class="widget-container left-receptacle"></div>
+                                        <div class="widget-container right-receptacle"></div>
+                                        <div class="text-container">
+                                            <p id="label_m_gg">G<strong>:</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+
+                            <span class="uib_shim"></span>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_52 margin_congif btn-sm btn-default hide" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_config1"><i class="glyphicon glyphicon-cog" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+
+                    </div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left" id="page_78_97">
+
+                    <div id="margem_grupos" class="grid urow" style="height:81px" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_49 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col"><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="uib-footer uib-footer-fixed container-group inner-element uib_w_67 header-bg" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_4 selected_button btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_garcons1">
+                                <img src="images/pictogramas/garcon_on.png" height="22px" width="22px">
+                            </button>
+                            <button class="btn widget uib_w_5 btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_mesas1">
+                                <img src="images/pictogramas/mesa_on.png" height="22px" width="22px">
+                            </button>
+                            <button class="btn widget uib_w_6 btn-default back_footer_but" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_pedido1">
+                                <img src="images/pictogramas/cardapio_on.png" height="22px" width="22px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--page dos produtos-->
+        <div class="upage hidden background_mesas" id="page_produtos_g">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_38 uib-header-fixed borda_cabec" data-uib="layout/header" data-ver="0" id="nome_grupo">
+                    <p class="h222" id="name_gg">Comidas</p>
+
+                    <div class="widget-container wrapping-col single-centered">
+                        <!-- <center id="g_grupo" class="fonte_branca">Comida</center>-->
+                        <!-- começa &nbsp;-->
+                        <div class="grid urow uib_row_23 pad_test" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_46 col-0_6-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <div class="col uib_col_45 col-0_6-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+                                    <div class="btn-group uib-bs-flex widget uib_w_41 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1" id="button_groups">
+                                        <button class="btn widget uib_w_42   -success fonte_qneg sem_border butt_menos" data-uib="twitter%20bootstrap/button" data-ver="1">-</button>
+                                        <button class="btn widget uib_w_42 fonte_quantidade cust_round border_quant btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">1</button>
+                                        <button class="btn widget uib_w_42 fonte_quantidade margin_quant btn-default border_quant" data-uib="twitter%20bootstrap/button" data-ver="1">2</button>
+                                        <button class="btn widget uib_w_42 fonte_quantidade margin_quant border_quant btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">3</button>
+                                        <button class="btn widget uib_w_42 fonte_quantidade border_quant btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">4</button>
+                                        <button class="btn widget uib_w_42 fonte_quantidade btn-default border_quant" data-uib="twitter%20bootstrap/button" data-ver="1">5</button>
+                                        <button class="btn widget uib_w_42 fonte_qpos sem_border butt_mais" data-uib="twitter%20bootstrap/button" data-ver="1">+</button>
+                                        <input type="text" size="1.5" value="1" style="font-size:22px;font-weight:bold;color:rgb(93,93,93);text-align:center;border: none;" id="quantidade">
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                        <!-- termina -->
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left pad_produt" id="page_38_20">
+
+                    <div id="margem_produto" class="grid pad_carda urow  row-height-25" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_49 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col"><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- começa -->
+
+                    <!-- termina disabled="disabled"-->
+
+                </div>
+
+                <div class="uib-footer uib-footer-fixed container-group inner-element uib_w_39 back_grupos" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_99" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_100 btn-default sem_border" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_voltar">
+                                <img src="images/pictogramas/voltar.png" height="18px" width="18px">
+                            </button>
+                            <button class="btn widget uib_w_101 btn-default normal_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_ver_comanda" disabled="disabled">Ver Comanda</button>
+                            <button class="btn widget uib_w_102 btn-default sem_border" data-uib="twitter%20bootstrap/button" data-ver="1"></button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--page da comanda aqui se lança o pedido    disabled="disabled"-->
+        <!-- Ver Commanda-->
+        <div class="upage hidden background_mesas" id="page_comanda">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_47 uib-header-fixed borda_cabec" data-uib="layout/header" data-ver="0" id="mesa_comanda">
+                    <!--<h2>Mesa</h2>-->
+                    <p class="h222" id="mesa_cardapio">Mesa1111</p>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_72 d-margins btn-default sem_border" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_apagar_cmd"><i class="glyphicon glyphicon-trash" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left pad_produt" id="page_7_77">
+
+                    <div id="comanda_first" data-name="" class="grid pad_carda urow row-height-cmd" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_50 col-0_2-12_2-9" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col"><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_51 col-0_7-12_7-9" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col left">
+                                <div class="table-thing widget uib_w_53 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1"></div><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_52 col-0_3-12_3-3" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_52 margin_spin" data-uib="twitter%20bootstrap/input" data-ver="1"></div><span class="uib_shim"></span>
+                            </div>
+                        </div><span class="uib_shim"></span>
+                    </div>
+
+                </div>
+
+                <div class="uib-footer uib-footer-fixed container-group inner-element uib_w_48 back_grupos" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_103 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_104 sem_border btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_voltar_comanda">
+                                <img src="images/pictogramas/voltar.png" height="18px" width="18px">
+                            </button>
+                            <button class="btn widget uib_w_105 btn-default normal_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnEnviarCmd" disabled="disabled">
+                                <img src="images/pictogramas/imprimir.png" height="18px" width="18px">&nbsp;Finalizar</button>
+                            <button class="btn widget uib_w_106 sem_border btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"></button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--page das observações aqui se alteram desde a comanda   disabled="disabled"-->
+        <div class="upage hidden background_mesas" id="page_observacoes">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_73 uib-header-fixed borda_cabec" data-uib="layout/header" data-ver="0">
+                    <!--<h2>Observações</h2>-->
+                    <p class="h222" id="mesa_cardapio">Observações</p>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left pad_produt" id="page_63_77">
+
+                    <div class="grid urow uib_row_31 row-height-31 pad_obs" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_74 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area center-h-v-col"><span class="widget uib_w_82 w1 sem_border fonte_label_obs label label-info" data-uib="twitter%20bootstrap/badge_and_label" data-ver="1" id="label_produto_obser">Produto</span>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid urow uib_row_32 row-height-32" data-uib="layout/row" data-ver="0">
+
+                        <div class="col uib_col_76 col-0" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col center">
+                                <div class="table-thing widget uib_w_79 fonte_label" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                                    <label class="narrow-control"></label>
+                                    <textarea rows="8" class="wide-control form-control" wrap="soft" placeholder="Selecionar ou digitar as observações separadas por ponto e vírgula" id="txtarea_obs"></textarea>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid urow uib_row_42 row-height-42" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_86 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area wrapping-col left" id="container_observ">
+                                <button class="btn widget uib_w_111 marg_butt_obs background_butt_obs btn-default fonte_butt_obs" data-uib="twitter%20bootstrap/button" data-ver="1">S/ CEBOLA</button>
+                                <button class="btn widget uib_w_111 marg_butt_obs background_butt_obs btn-default fonte_butt_obs" data-uib="twitter%20bootstrap/button" data-ver="1">S/ SALADA</button>
+                                <button class="btn widget uib_w_111 btn-default marg_butt_obs background_butt_obs fonte_butt_obs" data-uib="twitter%20bootstrap/button" data-ver="1">S/ SAL</button>
+                                <button class="btn widget uib_w_111 marg_butt_obs fonte_butt_obs background_butt_obs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">S/ TOMATE</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+
+                <div class="uib-footer uib-footer-fixed container-group inner-element uib_w_74 back_grupos" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_107 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_108 sem_border btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_voltar_observ">
+                                <img src="images/pictogramas/voltar.png" height="18px" width="18px">
+                            </button>
+                            <button class="btn widget uib_w_109 btn-default normal_button" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_alterar_obs" disabled="disabled"><i class="glyphicon glyphicon-ok button-icon-left" data-position="left"></i>Alterar</button>
+                            <button class="btn widget uib_w_110 btn-default sem_border" data-uib="twitter%20bootstrap/button" data-ver="1"></button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left" >
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- page para fazer as modificacoes as mesas -->
+<div class="container">
+
+  <!-- Trigger the modal with a button -->
+  <!--<button type="button" class="btn btn-default btn-lg" id="myBtn">EXTRA OPCOES</button>-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal_estra_opociones" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> EXTRA OPCOES </h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Editar </label>
+              <input type="text" class="btn btn-warning" id="btn_editar" placeholder="Editar/Modificar">
+            </div>
+              
+              <div class="form-group">
+              <label for="Cancelar Mesa"><span class="glyphicon glyphicon-remove"></span> Cancelar a Mesa </label>
+              <input type="button" class="btn btn-danger" id="btn_cancelar" placeholder="Cancelar">
+            </div>
+              
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left " data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Fechar </button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+        <!--end modificaciones na mes-->
+        
+    </body>
+
+</html>
+
+
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+
+<script>
+    
+/**melhorar estas funcoes de select */  
+    // numSelect e io numero tortal de itens no modal 
+    // data o valor de checked box
+    function limparTudoONo(data,numSelec){
+        ///////// num = numero de itens total na BBDD
+        var i=0;
+        var id0="";
+        if($("#cb_select_tudo").is(':checked')){
+            $(".sele").prop("checked", true);
+        }
+        if($("#cb_select_tudo").not(':checked')){
+            $(".sele").attr("checked",false);
+        }
+        var numDis = $("input:checkbox:checked").length;
+        alert(numDis);
+        if (numDis<=numSelec){
+            $(".sele").prop("checked",false);    
+        }
+        if (numDis===(numSelec+1)){
+            $(".sele").prop("checked",true);    
+        }
+    }//if
+//<input class="target sele" type="checkbox" id="id_option_4" onchange="mudarCheckPrin()">
+    // check box status combinar modificoes 
+    function mudarCheckPrin(id,numSelect){
+        //alert(id);
+        $("#cb_select_tudo").prop("checked",false);
+       // $('#cb_select_tudo').click(function() {
+        if($(this).is(':checked')) {
+                $(".sele").prop("checked", false);
+            }
+        verStatusSelect = $("[id='id_"+id+"']").is(":disabled") ? 0 : 1; 
+        //alert("verStatusSelect > " +verStatusSelect);
+        //$("[id='id_"+id+"']").removeAttr("disabled");
+        if ($("[id='id_"+id+"']").is(":disabled")){
+            $("[id='id_"+id+"']").prop( "disabled", false );
+        }else{
+            $("[id='id_"+id+"']").prop( "disabled", true );
+        }
+        //$("[id='id_"+id+"']").is(":not(:disabled)");
+        var numDisabled = $("input:checkbox:checked").length;
+        var numAble = numSelect-numDisabled;
+        if (numDisabled===numSelect){
+            $("#cb_select_tudo").attr("checked",true);
+        }
+        if (numDisabled<numSelect){
+            $("#cb_select_tudo").attr("checked",false);
+        }
+        
+        if (numAble===0){
+            alert("tranferir toda a mesa");
+            $("#cb_select_tudo").prop("checked",true);
+        }
+        //var numberOfChecked = $('input:checkbox:checked').length;
+        //alert("num checked = "+numDisabled);
+        //return false;
+    }
+    
+
+    function transferirAMesa(){
+        var num_mesa_atual = $("#pop_mesa").text();
+        numMesaAtual = num_mesa_atual.substr(-2);
+        //alert('transf...'+numMesaAtual);
+        var transferirMesa = 1;
+        //var numChecked = $('input:radio:checked').length;
+        var transODividir = $("#cb_select_tudo").is(':checked');   
+        if(transODividir){
+            transferirMesa_toda(numMesaAtual);
+        }else{
+             //alert('divi');
+            transferirMesa_parcialmente(numMesaAtual); 
+            
+        }
+    }
+    
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            alert($('.test:checked').length);
+
+        });
+    });
+    
+    function transferirMesa_parcialmente(numMesaAtual){
+        //alert("dividenco a mesa");
+         var $serv = ler_servidor();
+        var $server_databas = $('#txt_main_service').attr('title');
+        j=0;
+        var itens =[];
+        var itens_originais = [];
+        var numSelect = $("input:checkbox").length -1;
+        //alert(numSelect);
+        //$(".wide-control, .form-control, .default, .combo_border").each()
+        //alert($("[id='id_2']").val());
+        //return false;
+        for (j=1;j<=numSelect;j++){
+            itens[j] = $("[id='id_"+j+"']").val();
+         //   alert(">> "+itens[j]+" <<");
+        }
+        //itens_originais = ler_itens_originais_da_mesa(numMesaAtual);
+         for (j=1;j<=numSelect;j++){
+            itens_originais[j] = $("[id='qtd_real_"+j+"']").text();
+        }
+        //itens_originais.remove("");
+        
+        alert(">> "+itens_originais+" <<");
+        
+        var mesaNova = procurarMesasDestinoDividir(numMesaAtual,$serv,$server_databas);
+        //alert(mesaNova);
+        return false;
+        
+        
+    }
+    
+    function ler_itens_originais_da_mesa(numMesaAtual){
+        var itens = [];
+        var $serv = ler_servidor();
+        var $server_databas = $('#txt_main_service').attr('title');
+        alert(numMesaAtual);
+        $.ajax({
+            type: "POST",
+            dataType  : 'html',
+            url: $serv+"/php/restaurante.php",
+            data: {
+                    acao: "ler_itens_originais_da_mesa",
+                    main_server: $server_databas,
+                    mesa:numMesaAtual
+                      },
+            success: function(data) {
+                    alert('>>> '+data.trim());
+                        },
+                        error: function (xhr,status,error)
+                               {onError(xhr,status,error);}
+                    }); 
+    }
+    
+    function ler_servidor(){    
+         //alert('123');
+         $("#txt_main_service").attr('title',$("#txt_main_service").val());
+         $server = "http://" + $('#txt_main_service').attr('title') + '/dc_restaurante/www';
+         return $server;
+          //alert($server);
+         //inicializando o servidor de bd
+    }
+    
+    function transferirMesa_toda(numMesa){
+        //alert('transfiriendo a mesa total: ' +numMesa);
+        var $serv = ler_servidor();
+        var $server_databas = $('#txt_main_service').attr('title');
+        //alert('transfiriendo a mesa total11: ' +numMesa);
+        //alert(id_garcom);
+        //alert('transfiriendo a mesa total: ' +$serv+">>> "+$server_databas);
+        //return false;
+        var mesaNova = procurarMesasDestino(numMesa,$serv,$server_databas);
+    }
+    
+    function procurarMesasDestino(numMesa,$serv,$server_databas){
+        //alert("procurando mesas vacias...");
+        //$("#mesas_livres").remove();
+        $('#myModal_escolherMesaDestino').modal({
+            show: true
+        });
+        
+        mostrar_mesas_livres(numMesa,$serv,$server_databas);
+        //return false;
+    }
+    
+    function mostrar_mesas_livres(numMesa,$serv,$server_databas){
+        //alert(">>>"+numMesa+"<<"+">>>"+$serv+"<<"+$server_databas);
+        //$("#mesas_livres").remove(data);
+        $.ajax({
+               type: "POST",
+                dataType  : 'html',
+                url: $serv+"/php/restaurante.php",
+                data: {
+                    acao: "procurar_mesas_livres",
+                    main_server: $server_databas,
+                    mesa:numMesa
+                  },
+            success: function(data) {
+                    //alert("... >>"+data.trim());
+                    //var mesas = data.split(";");
+                    $("#myModalLabel").replaceWith("<center><h3 class='modal-title' style='color:rgb(135,135,135);'>Selecione uma mesa livre</h3></center>");
+                    //$("#mesas_livres").remove(data);
+                    $("#btn_mesasLivres").remove(); 
+                    $(".w3-container, .w3-bar").remove();
+                    $("#mesas_livres").append(data);       
+            },
+            error: function (xhr,status,error)
+                       {onError(xhr,status,error);}
+             });
+    }
+    
+    function mostrar_todas_as_mesas($serv,$server_databas){
+        //alert("mostrar_todas_as_mesas >>>"+$serv+"<<"+$server_databas);
+    //    return false;
+        //$("#mesas_livres").remove(data);
+        $.ajax({
+               type: "POST",
+                dataType  : 'html',
+                url: $serv+"/php/restaurante.php",
+                data: {
+                    acao: "listamesas",
+                    main_server: $server_databas,
+                    mesa:numMesa
+                  },
+            success: function(data) {
+                    //alert("... >>"+data.trim());
+                    //page_9_93
+                    
+                    $( ".uib_w_13" ).remove();
+                    $('#bmesas').append(data);
+      
+            },
+            error: function (xhr,status,error)
+                       {onError(xhr,status,error);}
+             });
+        
+    }
+    
+    function transMesaLivreEscolhida(mesaLivre,mesaAtual){
+        var $serv = ler_servidor();
+        var $server_databas = $('#txt_main_service').attr('title');
+        var confirmar = confirm("Confirmar Tranferencia");
+        if (confirmar){
+            //alert("transfiriendo a mesa");
+            $.ajax({
+               type: "POST",
+                dataType  : 'html',
+                url: $serv+"/php/restaurante.php",
+                data: {
+                    acao: "transferir_a_mesa_toda",
+                    main_server: $server_databas,
+                    mesa_livre:mesaLivre,
+                    mesa:mesaAtual
+                    //id_garcom:id_garcom
+                  },
+            success: function(data) {
+                ///alert('atualizando vistas ');
+                //alert("... >>"+data.trim());
+                if (data.trim()===0){
+                    alert('erro de banco de dados!');
+                }else{
+                    /*var id1 = "[btn_"+mesaLivre+"]";
+                    var id0 = "[btn_"+mesaAtual+"]";
+                    
+                    $("[id='"+id1+"'").hide();
+                    $("[id='"+id0+"'").hide();
+                    
+                    //alert("paso");*/
+                    
+                    $('#myModal_escolherMesaDestino').modal('hide');
+                    $('#popup_prod').modal('hide');
+                    $('#popup_prod2').modal('hide');
+                    $('#popup_prod3').modal('hide');
+                    $('#myModal_TrocarMesa').modal('hide');
+
+                    
+                }
+                    //var mesas = data.split(";");
+           
+            },
+            error: function (xhr,status,error)
+                       {onError(xhr,status,error);}
+             });
+        mostrar_todas_as_mesas($serv,$server_databas);  
+        }else{
+            alert("Cancelar");
+        }
+        
+    }
+    
+    function atualizarViews()
+     {  
+         //alert($server);
+         //inicializando o servidor de app
+         $server = "http://"+$('#txt_main_service').attr('title') +'/dc_restaurante/www/';
+         //inicializando o servidor de bd
+         $server_database = $('#txt_main_service').attr('title');
+         if($server_database != "")
+         {
+             $server_database = $server_database.replace('http://',"");
+             $server_database = $server_database.replace('/',"");
+             
+             //if($server_database.lastIndexOf(':') != $server_database.indexOf(':'))
+             if($server_database.lastIndexOf(':') !== -1)   
+                $server_database = $server_database.substr(0,$server_database.lastIndexOf(':'));    
+             
+             //alert($server);
+             //alert($server_database);
+             
+             //Atualiz_Status_Mesas();
+             ListarMesas();
+             ListarGrupos();
+             //Atualizar_empresa();
+         }
+         else
+             alert("Tem que cadastrar nome ou ip do servidor. Para isso tem que clicar no botão 'Configurações' que fica à direita do cabeçalho (á direita do nome da empresa.)",function(){},"Informação","OK"); 
+     }
+    
+    function listarMesas(){
+        var $serv = ler_servidor();
+        var $server_databas = $('#txt_main_service').attr('title');
+        $.ajax({
+               type: "POST",
+               dataType  : 'html',
+               url: $server+"/php/restaurante.php",
+               data:  {
+                    acao: "listamesas",
+                    main_server: $server_database
+                  },
+          success: function(data) {
+                   //alert(data); 
+               $( ".uib_w_13" ).remove();
+               $('#bmesas').append(data); 
+                },
+          error: function (xhr,status,error)
+               {onError(xhr,status,error);}
+           });
+        } 
+
+    function ListarGrupos(){
+            var $serv = ler_servidor();
+            var $server_databas = $('#txt_main_service').attr('title');
+            $.ajax({
+               type: "post",
+               dataType  : 'html',
+               url: $server+"/php/restaurante.php",
+               data:  {
+                    acao: "listagrupos",
+                    main_server: $server_database
+                  },
+            success: function(data) {
+                                   //alert(data);
+                $( ".uib_row_14" ).remove();
+                  $('#page_78_97').append(data); 
+                  var htmld = $('#page_78_97').html();
+                  $('#page_78_97').html(htmld);   
+                                   //$('#page_grupos_g').append(data); 
+                                   
+                 },
+            error: function (xhr,status,error)
+                   {onError(xhr,status,error);}
+              });        
+        }
+    
+    function limparTudoOnozz(num){
+        var num_escolhidos = $(".sele [checked='checked']").length;
+        alert(num_escolhidos);
+        alert(num);
+        if (num === num_escolhidos){
+             alert('false');
+            return false;
+        }
+        else{
+            alert('true');
+            return true;
+        }
+        //if ()
+    }
+    
+    //numChecked e o numero total de select no modal tranferir modal
+    //num_id numero de id id_2, id_option_2 num_id=2,3,4,..
+    //num_itens e o numero de valores de cada producto
+    // o iten selecionado pelo Select selected='selected
+    
+    function selecaoDeItensParaTransferir(dataSel,num_id,num_itens,numChecked){
+        //alert('mostar '+dataSel.value + ">>>"+num_id+">>>"+num_itens);   
+        //var j=dataSel.value;
+        select_options = "<select class='wide-control form-control default combo_border'  id='id_"+num_id+"' onchange='selecaoDeItensParaTransferir(this,"+num_id+","+num_itens+","+numChecked+")'>";
+            select_options += "<option  id='1' value='1'> 1 </option>";
+            if (num_itens>1){
+                for (j=2;j<=num_itens;j++){
+                    if (j === parseInt(dataSel.value)){
+                        select_options += "<option  selected='selected' id='"+j+"' value='"+j+"'> "+j+" </option>";
+                    }else{
+                        select_options +="<option  id='"+j+"' value='"+j+"'> "+j+" </option>";
+                        }
+                    }
+             //   select_options += "<option  selected id='"+j+"' value='"+j+"'> "+j+" </option></select>";
+                 select_options += "</select>";
+            }        
+        
+        var id="#id_"+num_id;        
+        $(id).remove();
+        $("#div_select_"+num_id).append(select_options);
+        
+        var idSelect = "#id_option_"+num_id;
+        $(idSelect).attr("checked",false);
+        
+        var numDisabled1 = $("input:checkbox:checked").length;
+        //var numAble1 = numSelect-numDisabled;   
+        /// desactiva o check princpal 
+        //if (numDisabled1<=numChecked){
+        $("#cb_select_tudo").prop("checked",false);
+        //}
+        
+        
+    }///if
+    
+    function fecharModalMesasLivres(){
+        $(".w3-container, .w3-bar").remove();
+       // $("#mesas_livres").append("<button class='btn widget uib_w_13 margin_button round_button m_disponivel fonte_nomal' data-uib='twitter%20bootstrap/button' data-ver='1' id='btn_mesasLivres'></button>");
+    }
+
+</script>
